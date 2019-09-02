@@ -4,6 +4,11 @@
 # Display Interface for your skill should be enabled through the Amazon
 # developer console
 # See this screen shot - https://alexa.design/enabledisplay
+#TODO Manage device without screen
+#TODO Do everything on the LaunchRequest
+#TODO Use APL instead of templates
+#TODO Aggiungi bollettini meteo https://www.arpae.it/sim/datiiningresso/Bollettino/oggi_Mattina.png
+#TODO Aggiungi previsioni pioggia ogni tre ore https://www.arpae.it/sim/?mappe_numeriche/numeriche&precipitazioni
 
 import json
 import logging
@@ -20,7 +25,7 @@ from ask_sdk_core.response_helper import (
 
 from ask_sdk_model.interfaces.display import (
     ImageInstance, Image, RenderTemplateDirective, ListTemplate1,
-    BackButtonBehavior, ListItem, BodyTemplate2, BodyTemplate1)
+    BackButtonBehavior, ListItem, BodyTemplate2, BodyTemplate1, BodyTemplate7)
 from ask_sdk_model import ui, Response
 
 WELCOME_MESSAGE = ("Ecco l'immagine del radar meteo Emilia Romagna ")
@@ -28,8 +33,8 @@ HELP_MESSAGE = ("Ciao. La skill mostra l'immagine del radar meteo Emilia Romagna
 		"Puoi guardare anche la legenda sull'immagine per capire il significato dei colori")
 EXIT_SKILL_MESSAGE = ("OK")
 USE_CARDS_FLAG = True
-IMG_PATH = ( "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png" )
-TITLE = "Radar Meteo ER"
+IMG_PATH = ( "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png" ) #img size = 663x556
+TITLE = "Previsione a tre ore Radar Meteo ER"
 PRIMARY_TEXT = "Previsione a tre ore"
 FALLBACK_ANSWER = ( "Sorry. I can't help you with that." )
 
@@ -117,6 +122,19 @@ def supports_display(handler_input):
     except:
         return False
 
+def supports_APL(handler_input):
+     # type: (HandlerInput) -> bool
+    """Check if APL is supported by the skill."""
+    try:
+        if hasattr(
+                handler_input.request_envelope.context.system.device.
+                        supported_interfaces, 'Alexa.Presentation.APL'):
+            return (
+                    handler_input.request_envelope.context.system.device.
+                    supported_interfaces.display is not None)
+    except:
+        return False
+
 class NowcastingIntent_handler(AbstractRequestHandler):
     """Handler for displaying the radar meteo forecast for Emilia Romagna
     Sample utterance: previsione radar
@@ -145,19 +163,22 @@ class NowcastingIntent_handler(AbstractRequestHandler):
         if supports_display(handler_input):
             logger.info("Supports Display")
             title = TITLE
-            background_img = Image(
+            fg_img7 = Image(
+	        content_description = PRIMARY_TEXT,
                 sources=[ImageInstance(
                     url=IMG_PATH
                         )])
-            primary_text = get_plain_text_content(
-                primary_text=PRIMARY_TEXT)
+#            primary_text = get_plain_text_content(
+#                primary_text=PRIMARY_TEXT)
             response_builder.add_directive(
                 RenderTemplateDirective(
-                    BodyTemplate2(
+                    BodyTemplate7(
                         back_button=BackButtonBehavior.HIDDEN,
-                        image=background_img,
-                        title=title,
-                        text_content=primary_text)))
+                        image=fg_img7,
+                        title=title
+                        )))
+        if supports_APL(handler_input):
+            logger.info("Supports APL")
 
         return response_builder.set_should_end_session(True).response
 
