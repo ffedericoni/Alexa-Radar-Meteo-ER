@@ -27,10 +27,14 @@ from ask_sdk_model.interfaces.display import (
     ImageInstance, Image, RenderTemplateDirective, ListTemplate1,
     BackButtonBehavior, ListItem, BodyTemplate2, BodyTemplate1, BodyTemplate7)
 from ask_sdk_model import ui, Response
+#Imports for APL interface
+from ask_sdk_model.interfaces.alexa.presentation.apl import (
+    RenderDocumentDirective, ExecuteCommandsDirective, SpeakItemCommand,
+    AutoPageCommand, HighlightMode)
 
-WELCOME_MESSAGE = ("Ecco l'immagine del radar meteo Emilia Romagna ")
-HELP_MESSAGE = ("Ciao. La skill mostra l'immagine del radar meteo Emilia Romagna con la previsione per le prossime tre ore. "
-		"Puoi guardare anche la legenda sull'immagine per capire il significato dei colori")
+WELCOME_MESSAGE = ("Ora di': previsione radar")
+HELP_MESSAGE = ("La skill mostra l'immagine del radar meteo Emilia Romagna con la previsione per le prossime tre ore. "
+"Puoi guardare anche la legenda sull'immagine per capire il significato dei colori")
 EXIT_SKILL_MESSAGE = ("OK")
 USE_CARDS_FLAG = True
 IMG_PATH = ( "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png" ) #img size = 663x556
@@ -44,6 +48,11 @@ sb = SkillBuilder()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+def _load_apl_document(file_path):
+    # type: (str) -> Dict[str, Any]
+    """Load the apl json document at the path into a dict object."""
+    with open(file_path) as f:
+        return json.load(f)
 
 # Request Handler classes
 class LaunchRequestHandler(AbstractRequestHandler):
@@ -128,10 +137,10 @@ def supports_APL(handler_input):
     try:
         if hasattr(
                 handler_input.request_envelope.context.system.device.
-                        supported_interfaces, 'Alexa.Presentation.APL'):
+                        supported_interfaces, 'alexa_presentation_apl'):
             return (
                     handler_input.request_envelope.context.system.device.
-                    supported_interfaces.display is not None)
+                    supported_interfaces.alexa_presentation_apl is not None)
     except:
         return False
 
@@ -160,11 +169,11 @@ class NowcastingIntent_handler(AbstractRequestHandler):
                         large_image_url=IMG_PATH,
                     )))
 
-        if supports_display(handler_input):
+        if supports_display(handler_input) and not supports_APL(handler_input):
             logger.info("Supports Display")
             title = TITLE
             fg_img7 = Image(
-	        content_description = PRIMARY_TEXT,
+                content_description = PRIMARY_TEXT,
                 sources=[ImageInstance(
                     url=IMG_PATH
                         )])
@@ -177,10 +186,18 @@ class NowcastingIntent_handler(AbstractRequestHandler):
                         image=fg_img7,
                         title=title
                         )))
+
         if supports_APL(handler_input):
             logger.info("Supports APL")
+            doc = _load_apl_document("RadarMeteoAPL.json")
+            speech = "Previsione radar in A.P.L."
+            response_builder.speak(speech).add_directive(
+                RenderDocumentDirective(
+                    document=_load_apl_document("RadarMeteoAPL.json")
+                )
+            )
 
-        return response_builder.set_should_end_session(True).response
+        return response_builder.set_should_end_session(False).response
 
 
 class FallbackIntentHandler(AbstractRequestHandler):
