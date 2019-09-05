@@ -6,7 +6,6 @@
 # See this screen shot - https://alexa.design/enabledisplay
 #TODO Manage device without screen
 #TODO Do everything on the LaunchRequest
-#TODO Use APL instead of templates
 #TODO Aggiungi bollettini meteo https://www.arpae.it/sim/datiiningresso/Bollettino/oggi_Mattina.png
 #TODO Aggiungi previsioni pioggia ogni tre ore https://www.arpae.it/sim/?mappe_numeriche/numeriche&precipitazioni
 
@@ -19,7 +18,7 @@ from ask_sdk_core.serialize import DefaultSerializer
 from ask_sdk_core.dispatch_components import (
     AbstractRequestHandler, AbstractExceptionHandler,
     AbstractResponseInterceptor, AbstractRequestInterceptor)
-from ask_sdk_core.utils import is_intent_name, is_request_type
+from ask_sdk_core.utils import is_intent_name, is_request_type, viewport
 from ask_sdk_core.response_helper import (
     get_plain_text_content, get_rich_text_content)
 
@@ -30,7 +29,7 @@ from ask_sdk_model import ui, Response
 #Imports for APL interface
 from ask_sdk_model.interfaces.alexa.presentation.apl import (
     RenderDocumentDirective, ExecuteCommandsDirective, SpeakItemCommand,
-    AutoPageCommand, HighlightMode)
+    IdleCommand, AutoPageCommand, HighlightMode)
 
 WELCOME_MESSAGE = ("Ora di': previsione radar")
 HELP_MESSAGE = ("La skill mostra l'immagine del radar meteo Emilia Romagna con la previsione per le prossime tre ore. "
@@ -41,6 +40,7 @@ IMG_PATH = ( "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png
 TITLE = "Previsione a tre ore Radar Meteo ER"
 PRIMARY_TEXT = "Previsione a tre ore"
 FALLBACK_ANSWER = ( "Sorry. I can't help you with that." )
+APP_NAME = "RadarMeteoER"
 
 # Skill Builder object
 sb = SkillBuilder()
@@ -156,9 +156,15 @@ class NowcastingIntent_handler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         logger.info("In NowcastingIntent")
-        attr = handler_input.attributes_manager.session_attributes
 
         response_builder = handler_input.response_builder
+        speech = "Previsione radar"
+        viewport_state = handler_input.request_envelope.context.viewport
+        if not viewport_state:
+            speech = "La Skill funziona solo sui device Echo con schermo"
+            response_builder.speak(speech)
+            return response_builder.set_should_end_session(True).response
+        response_builder.speak(speech)
         if USE_CARDS_FLAG:
             response_builder.set_card(
                 ui.StandardCard(
@@ -177,8 +183,6 @@ class NowcastingIntent_handler(AbstractRequestHandler):
                 sources=[ImageInstance(
                     url=IMG_PATH
                         )])
-#            primary_text = get_plain_text_content(
-#                primary_text=PRIMARY_TEXT)
             response_builder.add_directive(
                 RenderTemplateDirective(
                     BodyTemplate7(
@@ -190,10 +194,19 @@ class NowcastingIntent_handler(AbstractRequestHandler):
         if supports_APL(handler_input):
             logger.info("Supports APL")
             doc = _load_apl_document("RadarMeteoAPL.json")
-            speech = "Previsione radar in A.P.L."
-            response_builder.speak(speech).add_directive(
+            response_builder.add_directive(
                 RenderDocumentDirective(
+                    token=APP_NAME + "_Token",
                     document=_load_apl_document("RadarMeteoAPL.json")
+                )
+            ).add_directive(
+                ExecuteCommandsDirective(
+                    token=APP_NAME + "_Token",
+                    commands=[
+                        IdleCommand(
+                            delay=5000,
+                            description="wait_5_sec")
+                    ]
                 )
             )
 
@@ -219,7 +232,6 @@ class FallbackIntentHandler(AbstractRequestHandler):
         return handler_input.response_builder.response
 
 
-
 # Exception Handler classes
 class CatchAllExceptionHandler(AbstractExceptionHandler):
     """Catch All Exception handler.
@@ -234,7 +246,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speech = "Sorry, there was some problem. Please try again!!"
+        speech = "Mi dispiace, c'e' stato un problema."
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
