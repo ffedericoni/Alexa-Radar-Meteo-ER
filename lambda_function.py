@@ -108,6 +108,12 @@ class ExitIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> bool
         return (is_intent_name("AMAZON.CancelIntent")(handler_input) or
                 is_intent_name("AMAZON.StopIntent")(handler_input) or
+                is_intent_name("AMAZON.NavigateHomeIntent")(handler_input) or
+                is_intent_name("AMAZON.NavigateSettingsIntent")(handler_input) or
+                is_intent_name("AMAZON.PreviousIntent")(handler_input) or
+                is_intent_name("AMAZON.NextIntent")(handler_input) or
+                is_intent_name("AMAZON.RepeatIntent")(handler_input) or
+                is_intent_name("AMAZON.StartOverIntent")(handler_input) or
                 is_intent_name("AMAZON.PauseIntent")(handler_input))
 
     def handle(self, handler_input):
