@@ -1,5 +1,5 @@
-# Alexa-Radar-Meteo-ER
-Alexa Radar Meteo Emilia Romagna
+# RadarMeteoER Skill
+Alexa Skill to display the Radar Meteo for Emilia Romagna from www.arpae.it
 
 First Utterance: *apri radar emilia romagna*
 
