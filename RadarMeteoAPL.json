@@ -7,6 +7,10 @@
             {
                 "name": "alexa-layouts",
                 "version": "1.0.0"
+            },
+            {
+                "name": "alexa-viewport-profiles",
+                "version": "1.1.0"
             }
         ],
         "onMount": [],
@@ -19,34 +23,35 @@
             ],
             "items": [
                 {
-                    "when": "${'viewport.shape' == 'round'}",
+                    "when": "${@viewportProfile == @hubRoundSmall}",
                     "type": "Container",
-                    "direction": "column",
+                    "height": "100%",
+                    "width": "100%",
                     "items": [
                         {
                             "type": "Image",
-                            "width": "85vw",
-                            "height": "85vh",
+                            "width": "90%",
+                            "height": "100%",
                             "paddingLeft": "15vw",
-                            "paddingTop": "15vh",
+                            "paddingTop": "5vh",
                             "source": "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png",
-                            "scale": "best-fill",
+                            "scale": "best-fit",
                             "position": "absolute"
                         }
-                    ]
+                    ]                
                 },
                 {
                     "type": "Container",
-                    "height": "100vh",
-                    "width": "100vw",
+                    "height": "100%",
+                    "width": "100%",
                     "items": [
                         {
                             "type": "Image",
                             "source": "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png",
-                            "scale": "best-fill",
+                            "scale": "best-fit",
                             "position": "absolute",
-                            "width": "100vw",
-                            "height": "100vh"
+                            "width": "100%",
+                            "height": "100%"
                         }
                     ]
                 }

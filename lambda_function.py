@@ -4,8 +4,6 @@
 # Display Interface for your skill should be enabled through the Amazon
 # developer console
 # See this screen shot - https://alexa.design/enabledisplay
-#TODO Manage device without screen
-#TODO Do everything on the LaunchRequest
 #TODO Aggiungi bollettini meteo https://www.arpae.it/sim/datiiningresso/Bollettino/oggi_Mattina.png
 #TODO Aggiungi previsioni pioggia ogni tre ore https://www.arpae.it/sim/?mappe_numeriche/numeriche&precipitazioni
 
@@ -35,7 +33,7 @@ WELCOME_MESSAGE = ("Ora di': previsione radar")
 HELP_MESSAGE = ("La skill mostra l'immagine del radar meteo Emilia Romagna con la previsione per le prossime tre ore. "
 "Puoi guardare anche la legenda sull'immagine per capire il significato dei colori")
 EXIT_SKILL_MESSAGE = ("OK")
-USE_CARDS_FLAG = True
+USE_CARDS_FLAG = False
 IMG_PATH = ( "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png" ) #img size = 663x556
 TITLE = "Previsione a tre ore Radar Meteo ER"
 PRIMARY_TEXT = "Previsione a tre ore"
@@ -54,6 +52,32 @@ def _load_apl_document(file_path):
     with open(file_path) as f:
         return json.load(f)
 
+def supports_display(handler_input):
+    # type: (HandlerInput) -> bool
+    """Check if display is supported by the skill."""
+    try:
+        if hasattr(
+                handler_input.request_envelope.context.system.device.
+                        supported_interfaces, 'display'):
+            return (
+                    handler_input.request_envelope.context.system.device.
+                    supported_interfaces.display is not None)
+    except:
+        return False
+
+def supports_APL(handler_input):
+     # type: (HandlerInput) -> bool
+    """Check if APL is supported by the skill."""
+    try:
+        if hasattr(
+                handler_input.request_envelope.context.system.device.
+                        supported_interfaces, 'alexa_presentation_apl'):
+            return (
+                    handler_input.request_envelope.context.system.device.
+                    supported_interfaces.alexa_presentation_apl is not None)
+    except:
+        return False
+
 # Request Handler classes
 class LaunchRequestHandler(AbstractRequestHandler):
     """Handler for skill launch.
@@ -61,14 +85,77 @@ class LaunchRequestHandler(AbstractRequestHandler):
     """
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_request_type("LaunchRequest")(handler_input)
+        return (is_request_type("LaunchRequest")(handler_input) or
+                is_intent_name("NowcastingIntent")(handler_input) or
+                is_intent_name("AMAZON.StartOverIntent")(handler_input))
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         logger.info("In LaunchRequestHandler")
-        handler_input.response_builder.speak(WELCOME_MESSAGE).ask(
-            HELP_MESSAGE)
-        return handler_input.response_builder.response
+#        handler_input.response_builder.speak(WELCOME_MESSAGE).ask(
+#            HELP_MESSAGE)
+        response_builder = handler_input.response_builder
+        speech = PRIMARY_TEXT
+        viewport_state = handler_input.request_envelope.context.viewport
+        if not viewport_state:
+            speech = "La Skill funziona solo sui device con schermo"
+            response_builder.speak(speech)
+            return response_builder.set_should_end_session(True).response
+        response_builder.speak(speech)
+        if USE_CARDS_FLAG:
+            response_builder.set_card(
+                ui.StandardCard(
+                    title=TITLE,
+                    text=PRIMARY_TEXT,
+                    image=ui.Image(
+                        small_image_url=IMG_PATH,
+                        large_image_url=IMG_PATH,
+                    )))
+
+        if supports_display(handler_input) and not supports_APL(handler_input):
+            logger.info("Supports Display")
+            title = TITLE
+            fg_img7 = Image(
+                content_description = PRIMARY_TEXT,
+                sources=[ImageInstance(
+                    url=IMG_PATH
+                        )])
+            response_builder.add_directive(
+                RenderTemplateDirective(
+                    BodyTemplate7(
+                        back_button=BackButtonBehavior.HIDDEN,
+                        image=fg_img7,
+                        title=title
+                        )))
+
+        if supports_APL(handler_input):
+            logger.info("Supports APL")
+            response_builder.add_directive(
+                RenderDocumentDirective(
+                    token=APP_NAME + "_Token",
+                    document=_load_apl_document("RadarMeteoAPL.json")
+                )
+            ).add_directive(
+                ExecuteCommandsDirective(
+                    token=APP_NAME + "_Token",
+                    commands=[
+                        IdleCommand(
+                            delay=5000,
+                            description="wait_5_sec")
+                    ]
+                )
+            ).add_directive(
+                ExecuteCommandsDirective(
+                    token=APP_NAME + "_Token",
+                    commands=[
+                        IdleCommand(
+                            delay=5,
+                            description="last command")
+                    ]
+                )
+            )
+
+        return response_builder.set_should_end_session(True).response
 
 
 class SessionEndedRequestHandler(AbstractRequestHandler):
@@ -113,7 +200,6 @@ class ExitIntentHandler(AbstractRequestHandler):
                 is_intent_name("AMAZON.PreviousIntent")(handler_input) or
                 is_intent_name("AMAZON.NextIntent")(handler_input) or
                 is_intent_name("AMAZON.RepeatIntent")(handler_input) or
-                is_intent_name("AMAZON.StartOverIntent")(handler_input) or
                 is_intent_name("AMAZON.PauseIntent")(handler_input))
 
     def handle(self, handler_input):
@@ -124,40 +210,14 @@ class ExitIntentHandler(AbstractRequestHandler):
         return handler_input.response_builder.response
 
 
-def supports_display(handler_input):
-    # type: (HandlerInput) -> bool
-    """Check if display is supported by the skill."""
-    try:
-        if hasattr(
-                handler_input.request_envelope.context.system.device.
-                        supported_interfaces, 'display'):
-            return (
-                    handler_input.request_envelope.context.system.device.
-                    supported_interfaces.display is not None)
-    except:
-        return False
-
-def supports_APL(handler_input):
-     # type: (HandlerInput) -> bool
-    """Check if APL is supported by the skill."""
-    try:
-        if hasattr(
-                handler_input.request_envelope.context.system.device.
-                        supported_interfaces, 'alexa_presentation_apl'):
-            return (
-                    handler_input.request_envelope.context.system.device.
-                    supported_interfaces.alexa_presentation_apl is not None)
-    except:
-        return False
-
 class NowcastingIntent_handler(AbstractRequestHandler):
     """Handler for displaying the radar meteo forecast for Emilia Romagna
     Sample utterance: previsione radar
+    NOTE: Moved to LaunchRequest
     """
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return (is_intent_name("NowcastingIntent")(handler_input) or
-                is_intent_name("AMAZON.StartOverIntent")(handler_input))
+        return (is_intent_name("NowcastingIntent")(handler_input))
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
