@@ -133,15 +133,20 @@ class LaunchRequestHandler(AbstractRequestHandler):
             response_builder.add_directive(
                 RenderDocumentDirective(
                     token=APP_NAME + "_Token",
-                    document=_load_apl_document("RadarMeteoAPL.json")
+                    document=_load_apl_document("RadarMeteoAPL.json"),
+                    datasources= {
+                        "param" : {
+                            'url': IMG_PATH
+                        }
+                    }
                 )
             ).add_directive(
                 ExecuteCommandsDirective(
                     token=APP_NAME + "_Token",
                     commands=[
                         IdleCommand(
-                            delay=5000,
-                            description="wait_5_sec")
+                            delay=5,
+                            description="wait_a_bit")
                     ]
                 )
             ).add_directive(

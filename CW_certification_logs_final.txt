@@ -1,0 +1,972 @@
+@timestamp,@message
+2019-09-09 06:26:50.053,"START RequestId: 409874e9-c13d-4411-bbe9-a1c216a19392 Version: $LATEST
+"
+2019-09-09 06:26:50.515,"[INFO]	2019-09-09T06:26:50.515Z	409874e9-c13d-4411-bbe9-a1c216a19392	Request Envelope: {'context': {'audio_player': None,
+"
+2019-09-09 06:26:50.515,"             'automotive': None,
+"
+2019-09-09 06:26:50.515,"             'display': {'token': None},
+"
+2019-09-09 06:26:50.515,"             'geolocation': None,
+"
+2019-09-09 06:26:50.515,"             'system': {'api_access_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjg1OWYzZjIyLTVlMDItNDQxYi04ODkzLTgzYTY1ODdjYjhlOSIsImV4cCI6MTU2ODAxMDcwOSwiaWF0IjoxNTY4MDEwNDA5LCJuYmYiOjE1NjgwMTA0MDksInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCRDB2RkJ1YzBzaEpJdCs2Z3pzaXBqS3dFQUFBQUFBQUFHVUZOS3pxY1R2NkFXUlNxV0JPK1ZYNDJxaUY3Q3FPMFE3YXNvTzQvbzVncU5VSkxwV2VhZk10Sy83Z1I1bmJCT2crcDBxNFE0VEFaYms1bXB2Z2dmQ1FrNzNoazJjcDMydVI3NStVeGRxR21ja2hOU3VvRHhBQzkyOFpQMVpqem8rMHFybHRJZXJwVlpDaEltY3BEYTlLelZyQUlVSkJncXhwbDUwR1RTN3BVY0puMURNU0h3b1EzWFNrVjJyMFc2djF0QnNvZVpuMkFWMXRrTy9Jd0tmY1ozQlVheXZmWGVuQVNlbnRrMHMzaUhKdXBDclY0MTI3ZGJiYUlDdW1XSkxzMEQzMi9FU2RxdDdiQ3FSNE1vWUhoUmlSK3o3RlJ2cGtSRVdPM0t3MXN2YjVwTUZQWlUrelYrVVVWMEFlaHRPNmx6bnRaeVRScUVQZXhNcjM4bzFFV1BnSnhWVVVhZ21FejBvdTdFSlo5MFliOWM1eENDNWp5a0lHdnZXWGhhbmdIbHR5c1F3OHdoN0E9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFFTlEzS01RUFRFSFFMR0JXUjdZV0EzVzJVQVMyT0Y1RUMzSUs1VDdZWTZHUTRMRkdaVVpaNVhDN0JFSlA3QVNCQVpDVUlMUzVJNEJVTkk1TEZBSDdFUkpUWEUyUFpTRUJGNTU1WDZBNUsyRkczTVg3QzZRRE1BNUlHVVZYUUNVM0JRQlRaNlhZMkQ0N1c2VzVRQUtCUEw0SVlOWTJaQzVDTFZPVFRXVkw0Q1U3TVI0UlpYUFEiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BR0xSRVZWUUNSTUFGRU9JS1RDVldKU0ZYQUlIUElLUTNWRDNJQkNDSFJRWlJPUUFVV0tUT1FJNko1QkhIN09LR0MzU1oyR05LWUJHRVQ1Tk9VTVlETkpGSVZDTjdNWjRMWkdPT0ZWTU9VUkFMQklBRkxQV1VFTVQ0NlI3MlRTVzI1QjRZM1JHNEJDVU5LSjZWU1ZQSVpOVE5IUUFETVQzNURWRFVTVDVITEtUUEMzVU9WSkFCM0lJTzRCUklLVk9NVUpOVUxXWEdKM1g1QkEifX0.BuHFyOnIIuv6Xqavr-jO4_zA2FS_CUmPRKZM8r6w8M0dYsAL38gliMXfi0tTuUH21Hnp0jf8TSaHgVeyF9wA5sWUZq0p38-Ug8QqS5d_IDE3dAjInBfWffBcdTAfhXfJG6d8Mi6E8Bs4Ugu6tPJnGvNlgj7fHpocoaF2ydDyMenF-gVMBvcWmkdQeSpKtJO5AGaUuImUTw1D9-KPsqKmoBT7LbrOUt8BMcQ-NdpHT2w63MO80Asly_2h63MCQltdDXHanc_DdUur4ITp2yJyDI7f4hrw4GsJHK3EVs8tboRvO4-S9JQIo7xV5w2y0gM0O0rH-4SHINFda2RYOCn3-g',
+"
+2019-09-09 06:26:50.515,"                        'api_endpoint': 'https://api.eu.amazonalexa.com',
+"
+2019-09-09 06:26:50.515,"                        'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:26:50.515,"                        'device': {'device_id': 'amzn1.ask.device.AENQ3KMQPTEHQLGBWR7YWA3W2UAS2OF5EC3IK5T7YY6GQ4LFGZUZZ5XC7BEJP7ASBAZCUILS5I4BUNI5LFAH7ERJTXE2PZSEBF555X6A5K2FG3MX7C6QDMA5IGUVXQCU3BQBTZ6XY2D47W6W5QAKBPL4IYNY2ZC5CLVOTTWVL4CU7MR4RZXPQ',
+"
+2019-09-09 06:26:50.515,"                                   'supported_interfaces': {'alexa_presentation_apl': {'runtime': {'max_version': '1.1'}},
+"
+2019-09-09 06:26:50.515,"                                                            'audio_player': None,
+"
+2019-09-09 06:26:50.515,"                                                            'display': {'markup_version': '1.0',
+"
+2019-09-09 06:26:50.515,"                                                                        'template_version': '1.0'},
+"
+2019-09-09 06:26:50.515,"                                                            'geolocation': None,
+"
+2019-09-09 06:26:50.515,"                                                            'video_app': None}},
+"
+2019-09-09 06:26:50.515,"                        'user': {'access_token': None,
+"
+2019-09-09 06:26:50.515,"                                 'permissions': None,
+"
+2019-09-09 06:26:50.515,"                                 'user_id': 'amzn1.ask.account.AGLREVVQCRMAFEOIKTCVWJSFXAIHPIKQ3VD3IBCCHRQZROQAUWKTOQI6J5BHH7OKGC3SZ2GNKYBGET5NOUMYDNJFIVCN7MZ4LZGOOFVMOURALBIAFLPWUEMT46R72TSW25B4Y3RG4BCUNKJ6VSVPIZNTNHQADMT35DVDUST5HLKTPC3UOVJAB3IIO4BRIKVOMUJNULWXGJ3X5BA'}},
+"
+2019-09-09 06:26:50.515,"             'viewport': {'current_pixel_height': 480.0,
+"
+2019-09-09 06:26:50.515,"                          'current_pixel_width': 960.0,
+"
+2019-09-09 06:26:50.515,"                          'dpi': 160.0,
+"
+2019-09-09 06:26:50.515,"                          'experiences': [{'arc_minute_height': 141.0,
+"
+2019-09-09 06:26:50.515,"                                           'arc_minute_width': 282.0,
+"
+2019-09-09 06:26:50.515,"                                           'can_resize': False,
+"
+2019-09-09 06:26:50.515,"                                           'can_rotate': False}],
+"
+2019-09-09 06:26:50.515,"                          'keyboard': [],
+"
+2019-09-09 06:26:50.515,"                          'pixel_height': 480.0,
+"
+2019-09-09 06:26:50.515,"                          'pixel_width': 960.0,
+"
+2019-09-09 06:26:50.515,"                          'shape': 'RECTANGLE',
+"
+2019-09-09 06:26:50.515,"                          'touch': [{'SINGLE': 'SINGLE'}],
+"
+2019-09-09 06:26:50.515,"                          'video': {'codecs': [{'H_264_41': 'H_264_41'}]}}},
+"
+2019-09-09 06:26:50.515," 'request': {'locale': 'it-IT',
+"
+2019-09-09 06:26:50.515,"             'object_type': 'LaunchRequest',
+"
+2019-09-09 06:26:50.515,"             'request_id': 'amzn1.echo-api.request.33a3aa91-1dfb-4720-aeae-c7032d9bbec1',
+"
+2019-09-09 06:26:50.515,"             'task': None,
+"
+2019-09-09 06:26:50.515,"             'timestamp': datetime.datetime(2019, 9, 9, 6, 26, 49, tzinfo=tzlocal())},
+"
+2019-09-09 06:26:50.515," 'session': {'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:26:50.515,"             'attributes': None,
+"
+2019-09-09 06:26:50.515,"             'new': True,
+"
+2019-09-09 06:26:50.515,"             'session_id': 'amzn1.echo-api.session.c77c9c04-4de8-4456-9ffb-3951d59eeaf0',
+"
+2019-09-09 06:26:50.515,"             'user': {'access_token': None,
+"
+2019-09-09 06:26:50.515,"                      'permissions': None,
+"
+2019-09-09 06:26:50.515,"                      'user_id': 'amzn1.ask.account.AGLREVVQCRMAFEOIKTCVWJSFXAIHPIKQ3VD3IBCCHRQZROQAUWKTOQI6J5BHH7OKGC3SZ2GNKYBGET5NOUMYDNJFIVCN7MZ4LZGOOFVMOURALBIAFLPWUEMT46R72TSW25B4Y3RG4BCUNKJ6VSVPIZNTNHQADMT35DVDUST5HLKTPC3UOVJAB3IIO4BRIKVOMUJNULWXGJ3X5BA'}},
+"
+2019-09-09 06:26:50.515," 'version': '1.0'}
+"
+2019-09-09 06:26:50.515,"
+[INFO]	2019-09-09T06:26:50.515Z	409874e9-c13d-4411-bbe9-a1c216a19392	In LaunchRequestHandler
+"
+2019-09-09 06:26:50.515,"
+[INFO]	2019-09-09T06:26:50.515Z	409874e9-c13d-4411-bbe9-a1c216a19392	Supports APL
+"
+2019-09-09 06:26:50.614,"
+[INFO]	2019-09-09T06:26:50.556Z	409874e9-c13d-4411-bbe9-a1c216a19392	Response: {'can_fulfill_intent': None,
+"
+2019-09-09 06:26:50.614," 'card': None,
+"
+2019-09-09 06:26:50.614," 'directives': [{'datasources': None,
+"
+2019-09-09 06:26:50.614,"                 'document': {'commands': {},
+"
+2019-09-09 06:26:50.614,"                              'graphics': {},
+"
+2019-09-09 06:26:50.614,"                              'import': [{'name': 'alexa-layouts',
+"
+2019-09-09 06:26:50.614,"                                          'version': '1.0.0'},
+"
+2019-09-09 06:26:50.614,"                                         {'name': 'alexa-viewport-profiles',
+"
+2019-09-09 06:26:50.614,"                                          'version': '1.1.0'}],
+"
+2019-09-09 06:26:50.614,"                              'layouts': {},
+"
+2019-09-09 06:26:50.614,"                              'mainTemplate': {'items': [{'height': '100%',
+"
+2019-09-09 06:26:50.614,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 06:26:50.614,"                                                                     'paddingLeft': '15vw',
+"
+2019-09-09 06:26:50.614,"                                                                     'paddingTop': '5vh',
+"
+2019-09-09 06:26:50.614,"                                                                     'position': 'absolute',
+"
+2019-09-09 06:26:50.614,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 06:26:50.614,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 06:26:50.614,"                                                                     'type': 'Image',
+"
+2019-09-09 06:26:50.614,"                                                                     'width': '90%'}],
+"
+2019-09-09 06:26:50.614,"                                                          'type': 'Container',
+"
+2019-09-09 06:26:50.614,"                                                          'when': '${@viewportProfile '
+"
+2019-09-09 06:26:50.614,"                                                                  '== '
+"
+2019-09-09 06:26:50.614,"                                                                  '@hubRoundSmall}',
+"
+2019-09-09 06:26:50.614,"                                                          'width': '100%'},
+"
+2019-09-09 06:26:50.614,"                                                         {'height': '100%',
+"
+2019-09-09 06:26:50.614,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 06:26:50.614,"                                                                     'position': 'absolute',
+"
+2019-09-09 06:26:50.614,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 06:26:50.614,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 06:26:50.614,"                                                                     'type': 'Image',
+"
+2019-09-09 06:26:50.614,"                                                                     'width': '100%'}],
+"
+2019-09-09 06:26:50.614,"                                                          'type': 'Container',
+"
+2019-09-09 06:26:50.614,"                                                          'width': '100%'}],
+"
+2019-09-09 06:26:50.614,"                                               'parameters': ['payload']},
+"
+2019-09-09 06:26:50.614,"                              'onMount': [],
+"
+2019-09-09 06:26:50.614,"                              'settings': {},
+"
+2019-09-09 06:26:50.614,"                              'theme': 'dark',
+"
+2019-09-09 06:26:50.614,"                              'type': 'APL',
+"
+2019-09-09 06:26:50.614,"                              'version': '1.1'},
+"
+2019-09-09 06:26:50.614,"                 'object_type': 'Alexa.Presentation.APL.RenderDocument',
+"
+2019-09-09 06:26:50.614,"                 'packages': None,
+"
+2019-09-09 06:26:50.614,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 06:26:50.614,"                {'commands': [{'delay': 5000,
+"
+2019-09-09 06:26:50.614,"                               'description': 'wait_5_sec',
+"
+2019-09-09 06:26:50.614,"                               'object_type': 'Idle',
+"
+2019-09-09 06:26:50.614,"                               'when': None}],
+"
+2019-09-09 06:26:50.614,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 06:26:50.614,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 06:26:50.614,"                {'commands': [{'delay': 5,
+"
+2019-09-09 06:26:50.614,"                               'description': 'last command',
+"
+2019-09-09 06:26:50.614,"                               'object_type': 'Idle',
+"
+2019-09-09 06:26:50.614,"                               'when': None}],
+"
+2019-09-09 06:26:50.614,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 06:26:50.614,"                 'token': 'RadarMeteoER_Token'}],
+"
+2019-09-09 06:26:50.614," 'output_speech': {'object_type': 'SSML',
+"
+2019-09-09 06:26:50.614,"                   'play_behavior': None,
+"
+2019-09-09 06:26:50.614,"                   'ssml': '<speak>Previsione a tre ore</speak>'},
+"
+2019-09-09 06:26:50.614," 'reprompt': None,
+"
+2019-09-09 06:26:50.614," 'should_end_session': True}
+"
+2019-09-09 06:26:50.634,"END RequestId: 409874e9-c13d-4411-bbe9-a1c216a19392
+"
+2019-09-09 06:26:50.634,"REPORT RequestId: 409874e9-c13d-4411-bbe9-a1c216a19392	Duration: 581.14 ms	Billed Duration: 600 ms	Memory Size: 128 MB	Max Memory Used: 66 MB	Init Duration: 373.66 ms	
+XRAY TraceId: 1-5d75f0a9-47deeabfce1c27e7407ec6c0	SegmentId: 24a0e98108edc90a	Sampled: false	
+"
+2019-09-09 06:26:51.635,"
+"
+2019-09-09 06:43:03.029,"START RequestId: a1ada166-8dfc-4811-8240-446736b4e979 Version: $LATEST
+"
+2019-09-09 06:43:03.506,"[INFO]	2019-09-09T06:43:03.505Z	a1ada166-8dfc-4811-8240-446736b4e979	Request Envelope: {'context': {'audio_player': None,
+"
+2019-09-09 06:43:03.506,"             'automotive': None,
+"
+2019-09-09 06:43:03.506,"             'display': {'token': None},
+"
+2019-09-09 06:43:03.506,"             'geolocation': None,
+"
+2019-09-09 06:43:03.506,"             'system': {'api_access_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjg1OWYzZjIyLTVlMDItNDQxYi04ODkzLTgzYTY1ODdjYjhlOSIsImV4cCI6MTU2ODAxMTY4MiwiaWF0IjoxNTY4MDExMzgyLCJuYmYiOjE1NjgwMTEzODIsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCRDB2RkJ1YzBzaEpJdCs2Z3pzaXBqTFFFQUFBQUFBQUNqR2ZjR3RJK3kvSUhqcUdVK2hGT1R1UHBUMW1NL0VGLzZmWUFhYmJzWHlwTDNmNk4xeENKM0c5bTQ1dXJCQmlFM2tjSUFoVGh3dFdya3VaeTZ3UGx6SDFpNmtSbGhLbklxSnlSalJYdjVmRWtNTU8wZW90OGdTTDU4aS9BeVhMS2gycUFLTXp5YUlXNVFUaHJVQlkyRFdDZm03OWRFWDBqTWJSUVBJUHcvR0x0NmxrRDdUb1VFeitCbjV5Q0pKMXk3d3o5OWY2YlMweE5RSkxmS0hhQkVnOXphOVJ5Y0hOYXFReEZPNTFpYXJjVGVRWlljYi8zdDQ5bUpJWjdBaStmTVZoWDN2dHRCRXZYN0syZzRoTk5PdmllY3dSTmZLSkNVUEZhR0VjTzhTOFhQWXdVVXo1UzJ0STJobDl3VFdwSHUrelUydTYvWk96d0dCNUNNT2g0K0M4a1VvMDFLaks2ZXhDYWh5VGsybmI3UWhkTEZaWXdQUnhKNWszSndzenAzdGo5dlJFYzR6ZE1oY0krdyIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFGTzY0QUhFMkVKRFlFRUdNSFhOUjRUNDNGRU1BQjZIVU1UUzNDSU4yNE9IR0pLREU1R0pRTk5JVk9ZNENKVzJHQkpPM1BRTE8ySDZCU1pKQk9HSkdQRTVNUzdRQ1hBT1dZRkpTV1NRNk1ZSlMyQ0Y3WUNGV1hBV0VHS0dXQlM1RlJSVlk3VlM3RE00Rk1JRUNUTEdVRTNPVVlOSlY3RTI3NTNIN1EzM1NPQlVJNVJFTzQ1Q0MiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRVNCNjJBSEtFNUlHUTVMR0xXRTZZVlkyS1NEREVTRFI0UUJIVVVFR01IRFQzREk1QUQzVU9GR1ZRQVZCRVpRT0lBN1VLWUszSVhFWk9MNVNOREM3TDJNMzYzUUtYVERYSUJWNkI1RExVT09TNkZWQ0EyWU9QQ1VEWFM1N0NBRTdYTkZQWjM0U0NJTUtTNEFBSkNZSkFJTTdIM1czVFBUV0RHVjdFRFUyV1lBMlROVVRUS0FMSTNPUldFNU5CUVM3TVgzSlZOTk5NNk5MSFkifX0.Cx__e58kSRQTxSiXB7mUa4DCSExGF08Na1-fyRhtkEr9LZib6vDIHGjRT3S0rDMzdCLosVq1YZvlGhF4hwAhwbUsV_76_FaLmQPz0aNLRLaC6VXeRJKi9FxHB9_Huxy_Fhzc_PQLcdkKXYn0dzz4khQLVU4hebScdI0HCis_dPyT1gongQailHL23XFvy1UeFNZBT4GiGPem-rJ4GBRERyf6MjGfmMtZBhtyNjK3wbB7gYZtFMNLGRjYKumpo4oeqFVuQxKneckYQUBk4wPoTIOB1ewhKT6-m7gX9moD5GxzDWYU69hRHhO2mQfzXVMjjbY9rEQj4cmpl49JRKvvvA',
+"
+2019-09-09 06:43:03.506,"                        'api_endpoint': 'https://api.eu.amazonalexa.com',
+"
+2019-09-09 06:43:03.506,"                        'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:43:03.506,"                        'device': {'device_id': 'amzn1.ask.device.AFO64AHE2EJDYEEGMHXNR4T43FEMAB6HUMTS3CIN24OHGJKDE5GJQNNIVOY4CJW2GBJO3PQLO2H6BSZJBOGJGPE5MS7QCXAOWYFJSWSQ6MYJS2CF7YCFWXAWEGKGWBS5FRRVY7VS7DM4FMIECTLGUE3OUYNJV7E2753H7Q33SOBUI5REO45CC',
+"
+2019-09-09 06:43:03.506,"                                   'supported_interfaces': {'alexa_presentation_apl': {'runtime': {'max_version': '1.0'}},
+"
+2019-09-09 06:43:03.506,"                                                            'audio_player': None,
+"
+2019-09-09 06:43:03.506,"                                                            'display': {'markup_version': '1.0',
+"
+2019-09-09 06:43:03.506,"                                                                        'template_version': '1.0'},
+"
+2019-09-09 06:43:03.506,"                                                            'geolocation': None,
+"
+2019-09-09 06:43:03.506,"                                                            'video_app': None}},
+"
+2019-09-09 06:43:03.506,"                        'user': {'access_token': None,
+"
+2019-09-09 06:43:03.506,"                                 'permissions': None,
+"
+2019-09-09 06:43:03.506,"                                 'user_id': 'amzn1.ask.account.AESB62AHKE5IGQ5LGLWE6YVY2KSDDESDR4QBHUUEGMHDT3DI5AD3UOFGVQAVBEZQOIA7UKYK3IXEZOL5SNDC7L2M363QKXTDXIBV6B5DLUOOS6FVCA2YOPCUDXS57CAE7XNFPZ34SCIMKS4AAJCYJAIM7H3W3TPTWDGV7EDU2WYA2TNUTTKALI3ORWE5NBQS7MX3JVNNNM6NLHY'}},
+"
+2019-09-09 06:43:03.506,"             'viewport': {'current_pixel_height': 480.0,
+"
+2019-09-09 06:43:03.506,"                          'current_pixel_width': 960.0,
+"
+2019-09-09 06:43:03.506,"                          'dpi': 160.0,
+"
+2019-09-09 06:43:03.506,"                          'experiences': [{'arc_minute_height': 141.0,
+"
+2019-09-09 06:43:03.506,"                                           'arc_minute_width': 282.0,
+"
+2019-09-09 06:43:03.506,"                                           'can_resize': False,
+"
+2019-09-09 06:43:03.506,"                                           'can_rotate': False}],
+"
+2019-09-09 06:43:03.506,"                          'keyboard': [],
+"
+2019-09-09 06:43:03.506,"                          'pixel_height': 480.0,
+"
+2019-09-09 06:43:03.506,"                          'pixel_width': 960.0,
+"
+2019-09-09 06:43:03.506,"                          'shape': 'RECTANGLE',
+"
+2019-09-09 06:43:03.506,"                          'touch': [{'SINGLE': 'SINGLE'}],
+"
+2019-09-09 06:43:03.506,"                          'video': {'codecs': [{'H_264_41': 'H_264_41'}]}}},
+"
+2019-09-09 06:43:03.506," 'request': {'locale': 'it-IT',
+"
+2019-09-09 06:43:03.506,"             'object_type': 'LaunchRequest',
+"
+2019-09-09 06:43:03.506,"             'request_id': 'amzn1.echo-api.request.165d7012-eb09-4c04-a4a2-9aca166d4265',
+"
+2019-09-09 06:43:03.506,"             'task': None,
+"
+2019-09-09 06:43:03.506,"             'timestamp': datetime.datetime(2019, 9, 9, 6, 43, 2, tzinfo=tzlocal())},
+"
+2019-09-09 06:43:03.506," 'session': {'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:43:03.506,"             'attributes': None,
+"
+2019-09-09 06:43:03.506,"             'new': True,
+"
+2019-09-09 06:43:03.506,"             'session_id': 'amzn1.echo-api.session.6ddf4b68-5888-4020-97d2-9c5d3db22010',
+"
+2019-09-09 06:43:03.506,"             'user': {'access_token': None,
+"
+2019-09-09 06:43:03.506,"                      'permissions': None,
+"
+2019-09-09 06:43:03.506,"                      'user_id': 'amzn1.ask.account.AESB62AHKE5IGQ5LGLWE6YVY2KSDDESDR4QBHUUEGMHDT3DI5AD3UOFGVQAVBEZQOIA7UKYK3IXEZOL5SNDC7L2M363QKXTDXIBV6B5DLUOOS6FVCA2YOPCUDXS57CAE7XNFPZ34SCIMKS4AAJCYJAIM7H3W3TPTWDGV7EDU2WYA2TNUTTKALI3ORWE5NBQS7MX3JVNNNM6NLHY'}},
+"
+2019-09-09 06:43:03.506," 'version': '1.0'}
+"
+2019-09-09 06:43:03.506,"
+[INFO]	2019-09-09T06:43:03.506Z	a1ada166-8dfc-4811-8240-446736b4e979	In LaunchRequestHandler
+"
+2019-09-09 06:43:03.585,"
+[INFO]	2019-09-09T06:43:03.506Z	a1ada166-8dfc-4811-8240-446736b4e979	Supports APL
+"
+2019-09-09 06:43:03.585,"
+[INFO]	2019-09-09T06:43:03.565Z	a1ada166-8dfc-4811-8240-446736b4e979	Response: {'can_fulfill_intent': None,
+"
+2019-09-09 06:43:03.585," 'card': None,
+"
+2019-09-09 06:43:03.585," 'directives': [{'datasources': None,
+"
+2019-09-09 06:43:03.585,"                 'document': {'commands': {},
+"
+2019-09-09 06:43:03.585,"                              'graphics': {},
+"
+2019-09-09 06:43:03.585,"                              'import': [{'name': 'alexa-layouts',
+"
+2019-09-09 06:43:03.585,"                                          'version': '1.0.0'},
+"
+2019-09-09 06:43:03.585,"                                         {'name': 'alexa-viewport-profiles',
+"
+2019-09-09 06:43:03.585,"                                          'version': '1.1.0'}],
+"
+2019-09-09 06:43:03.585,"                              'layouts': {},
+"
+2019-09-09 06:43:03.585,"                              'mainTemplate': {'items': [{'height': '100%',
+"
+2019-09-09 06:43:03.585,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 06:43:03.585,"                                                                     'paddingLeft': '15vw',
+"
+2019-09-09 06:43:03.585,"                                                                     'paddingTop': '5vh',
+"
+2019-09-09 06:43:03.585,"                                                                     'position': 'absolute',
+"
+2019-09-09 06:43:03.585,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 06:43:03.585,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 06:43:03.585,"                                                                     'type': 'Image',
+"
+2019-09-09 06:43:03.585,"                                                                     'width': '90%'}],
+"
+2019-09-09 06:43:03.585,"                                                          'type': 'Container',
+"
+2019-09-09 06:43:03.585,"                                                          'when': '${@viewportProfile '
+"
+2019-09-09 06:43:03.585,"                                                                  '== '
+"
+2019-09-09 06:43:03.585,"                                                                  '@hubRoundSmall}',
+"
+2019-09-09 06:43:03.585,"                                                          'width': '100%'},
+"
+2019-09-09 06:43:03.585,"                                                         {'height': '100%',
+"
+2019-09-09 06:43:03.585,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 06:43:03.585,"                                                                     'position': 'absolute',
+"
+2019-09-09 06:43:03.585,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 06:43:03.585,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 06:43:03.585,"                                                                     'type': 'Image',
+"
+2019-09-09 06:43:03.585,"                                                                     'width': '100%'}],
+"
+2019-09-09 06:43:03.585,"                                                          'type': 'Container',
+"
+2019-09-09 06:43:03.585,"                                                          'width': '100%'}],
+"
+2019-09-09 06:43:03.585,"                                               'parameters': ['payload']},
+"
+2019-09-09 06:43:03.585,"                              'onMount': [],
+"
+2019-09-09 06:43:03.585,"                              'settings': {},
+"
+2019-09-09 06:43:03.585,"                              'theme': 'dark',
+"
+2019-09-09 06:43:03.585,"                              'type': 'APL',
+"
+2019-09-09 06:43:03.585,"                              'version': '1.1'},
+"
+2019-09-09 06:43:03.585,"                 'object_type': 'Alexa.Presentation.APL.RenderDocument',
+"
+2019-09-09 06:43:03.585,"                 'packages': None,
+"
+2019-09-09 06:43:03.585,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 06:43:03.585,"                {'commands': [{'delay': 5000,
+"
+2019-09-09 06:43:03.585,"                               'description': 'wait_5_sec',
+"
+2019-09-09 06:43:03.585,"                               'object_type': 'Idle',
+"
+2019-09-09 06:43:03.585,"                               'when': None}],
+"
+2019-09-09 06:43:03.585,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 06:43:03.585,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 06:43:03.585,"                {'commands': [{'delay': 5,
+"
+2019-09-09 06:43:03.585,"                               'description': 'last command',
+"
+2019-09-09 06:43:03.585,"                               'object_type': 'Idle',
+"
+2019-09-09 06:43:03.585,"                               'when': None}],
+"
+2019-09-09 06:43:03.585,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 06:43:03.585,"                 'token': 'RadarMeteoER_Token'}],
+"
+2019-09-09 06:43:03.585," 'output_speech': {'object_type': 'SSML',
+"
+2019-09-09 06:43:03.585,"                   'play_behavior': None,
+"
+2019-09-09 06:43:03.585,"                   'ssml': '<speak>Previsione a tre ore</speak>'},
+"
+2019-09-09 06:43:03.585," 'reprompt': None,
+"
+2019-09-09 06:43:03.585," 'should_end_session': True}
+"
+2019-09-09 06:43:03.625,"END RequestId: a1ada166-8dfc-4811-8240-446736b4e979
+"
+2019-09-09 06:43:03.625,"REPORT RequestId: a1ada166-8dfc-4811-8240-446736b4e979	Duration: 577.00 ms	Billed Duration: 600 ms	Memory Size: 128 MB	Max Memory Used: 66 MB	Init Duration: 382.49 ms	
+XRAY TraceId: 1-5d75f476-326ec1d8ebec9b70cfe5c2e8	SegmentId: 41f45a0a538b6d65	Sampled: false	
+"
+2019-09-09 06:43:04.626,"
+"
+2019-09-09 06:50:50.317,"START RequestId: eccc36f3-bd12-46a2-88b4-3c722e25c550 Version: $LATEST
+"
+2019-09-09 06:50:50.385,"[INFO]	2019-09-09T06:50:50.368Z	eccc36f3-bd12-46a2-88b4-3c722e25c550	Request Envelope: {'context': {'audio_player': None,
+"
+2019-09-09 06:50:50.385,"             'automotive': None,
+"
+2019-09-09 06:50:50.385,"             'display': None,
+"
+2019-09-09 06:50:50.385,"             'geolocation': None,
+"
+2019-09-09 06:50:50.385,"             'system': {'api_access_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjg1OWYzZjIyLTVlMDItNDQxYi04ODkzLTgzYTY1ODdjYjhlOSIsImV4cCI6MTU2ODAxMjE1MCwiaWF0IjoxNTY4MDExODUwLCJuYmYiOjE1NjgwMTE4NTAsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCRDB2RkJ1YzBzaEpJdCs2Z3pzaXBqTFFFQUFBQUFBQUJCMzR4VmwwM3FibFJXTFVNblVUQWpBRXppbG5mK1BLK1plTy9vMmZyYS8vV0syWTRNWC9xRVQzeXR0dUZyUW14VUpEbjZnQXZuSzIrbC9mRkZoSzlKeVczTVYyb1dMZzFxMHpDTzEzbjBJQW1CaU5NVXBkbG90NTRHY0tReC9yTEJNYkhZd05sNlJvTzdxd0FHZ2RXUFY4aEUzdW00U3FzMkVoUDVjNWNscXUwajBncWxQdm4xZGI1QTg2YTA3VkhYbGl3eCtRTVRpZXdVYUwrMlV1d0M1bHp4QWZaekk5VzNpSUVhTVhwbE9TOGpiZ3M5dlFyTnlOMEF6c0ZOaksrU3hIdUdNdUYrU2dza2lUWnpiVUlqeVhMRHcxaXl4czA1NDY5cE1NaUVXVitVTEJRN3dGeUdJWllMQnZsWFkwSVBZTzJFYjAzejZDVVZibklHRXVGTnVuQUt4QkIzbjMxeXhHanA5N1cycFVkRDBOajBWMHlyajdBall4L21TM2xpMjBFRlpCUDhrWnhXTkRsYyIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFGTzY0QUhFMkVKRFlFRUdNSFhOUjRUNDNGRURCMjNYSFlXM1Q2M1JMV1NYMzNYVFhDWU9QSlFHSkpKSVNZRVhOUk5GQlhESDZYTkhGVkFZSlc2MkFHNFZYNlhOUTNYVkhINEhENVhQS0YzSkxFWkpJTlkyTEUyVkZON09HNjJPQ09RNllZUDNYVjZaQ1NKU1BBTzVDWERTRlFMQ05WUFE3WEpVWEJIS0M3NFVTVTM3Nk00N0ciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRVNCNjJBSEtFNUlHUTVMR0xXRTZZVlkyS1NEREVTRFI0UUJIVVVFR01IRFQzREk1QUQzVU9GR1ZRQVZCRVpRT0lBN1VLWUszSVhFWk9MNVNOREM3TDJNMzYzUUtYVERYSUJWNkI1RExVT09TNkZWQ0EyWU9QQ1VEWFM1N0NBRTdYTkZQWjM0U0NJTUtTNEFBSkNZSkFJTTdIM1czVFBUV0RHVjdFRFUyV1lBMlROVVRUS0FMSTNPUldFNU5CUVM3TVgzSlZOTk5NNk5MSFkifX0.VNCz7Y8HfjynrEjymq3NE5fUg3h0wsPNssZmMTjGhHy_fS99RX3MbeOGhgN3xrTjfyWbi73eY7On9JtnIOTwCMV0qyg9PeR-hpk54P4m4NopX5kltYwdxi9rti3yMtA7t8iTEpwvBwceRfl8HdyqJVqpwJLdKuHmKG43ljN1yuwt_fUfC0Z4kwvj_adxSCEMW-Fa8gjOrXK5pIp-Ab01wYaG6iKG6IpIa0NXZIOKi-KWRPGhjI_PKGcBQzDYA3hQRlh8gD131e-tZQo1UqMXYYImeJLAJStHfSQmtfP87JxQfG8jxCce7_ooHFvWZWP7UuTfxEJ3riQc2KL6YPSlkQ',
+"
+2019-09-09 06:50:50.385,"                        'api_endpoint': 'https://api.eu.amazonalexa.com',
+"
+2019-09-09 06:50:50.385,"                        'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:50:50.385,"                        'device': {'device_id': 'amzn1.ask.device.AFO64AHE2EJDYEEGMHXNR4T43FEDB23XHYW3T63RLWSX33XTXCYOPJQGJJJISYEXNRNFBXDH6XNHFVAYJW62AG4VX6XNQ3XVHH4HD5XPKF3JLEZJINY2LE2VFN7OG62OCOQ6YYP3XV6ZCSJSPAO5CXDSFQLCNVPQ7XJUXBHKC74USU376M47G',
+"
+2019-09-09 06:50:50.385,"                                   'supported_interfaces': {'alexa_presentation_apl': None,
+"
+2019-09-09 06:50:50.385,"                                                            'audio_player': None,
+"
+2019-09-09 06:50:50.385,"                                                            'display': None,
+"
+2019-09-09 06:50:50.385,"                                                            'geolocation': None,
+"
+2019-09-09 06:50:50.385,"                                                            'video_app': None}},
+"
+2019-09-09 06:50:50.385,"                        'user': {'access_token': None,
+"
+2019-09-09 06:50:50.385,"                                 'permissions': None,
+"
+2019-09-09 06:50:50.385,"                                 'user_id': 'amzn1.ask.account.AESB62AHKE5IGQ5LGLWE6YVY2KSDDESDR4QBHUUEGMHDT3DI5AD3UOFGVQAVBEZQOIA7UKYK3IXEZOL5SNDC7L2M363QKXTDXIBV6B5DLUOOS6FVCA2YOPCUDXS57CAE7XNFPZ34SCIMKS4AAJCYJAIM7H3W3TPTWDGV7EDU2WYA2TNUTTKALI3ORWE5NBQS7MX3JVNNNM6NLHY'}},
+"
+2019-09-09 06:50:50.385,"             'viewport': None},
+"
+2019-09-09 06:50:50.385," 'request': {'locale': 'it-IT',
+"
+2019-09-09 06:50:50.385,"             'object_type': 'LaunchRequest',
+"
+2019-09-09 06:50:50.385,"             'request_id': 'amzn1.echo-api.request.c5b17f8f-aff3-4f09-a61a-5d10adf8c193',
+"
+2019-09-09 06:50:50.385,"             'task': None,
+"
+2019-09-09 06:50:50.385,"             'timestamp': datetime.datetime(2019, 9, 9, 6, 50, 50, tzinfo=tzlocal())},
+"
+2019-09-09 06:50:50.385," 'session': {'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:50:50.385,"             'attributes': None,
+"
+2019-09-09 06:50:50.385,"             'new': True,
+"
+2019-09-09 06:50:50.385,"             'session_id': 'amzn1.echo-api.session.f24c27a1-dd4d-4377-bf26-476ff664e90e',
+"
+2019-09-09 06:50:50.385,"             'user': {'access_token': None,
+"
+2019-09-09 06:50:50.385,"                      'permissions': None,
+"
+2019-09-09 06:50:50.385,"                      'user_id': 'amzn1.ask.account.AESB62AHKE5IGQ5LGLWE6YVY2KSDDESDR4QBHUUEGMHDT3DI5AD3UOFGVQAVBEZQOIA7UKYK3IXEZOL5SNDC7L2M363QKXTDXIBV6B5DLUOOS6FVCA2YOPCUDXS57CAE7XNFPZ34SCIMKS4AAJCYJAIM7H3W3TPTWDGV7EDU2WYA2TNUTTKALI3ORWE5NBQS7MX3JVNNNM6NLHY'}},
+"
+2019-09-09 06:50:50.385," 'version': '1.0'}
+"
+2019-09-09 06:50:50.405,"
+[INFO]	2019-09-09T06:50:50.368Z	eccc36f3-bd12-46a2-88b4-3c722e25c550	In LaunchRequestHandler
+"
+2019-09-09 06:50:50.425,"
+[INFO]	2019-09-09T06:50:50.405Z	eccc36f3-bd12-46a2-88b4-3c722e25c550	Response: {'can_fulfill_intent': None,
+"
+2019-09-09 06:50:50.425," 'card': None,
+"
+2019-09-09 06:50:50.425," 'directives': None,
+"
+2019-09-09 06:50:50.425," 'output_speech': {'object_type': 'SSML',
+"
+2019-09-09 06:50:50.425,"                   'play_behavior': None,
+"
+2019-09-09 06:50:50.425,"                   'ssml': '<speak>La Skill funziona solo sui device con '
+"
+2019-09-09 06:50:50.425,"                           'schermo</speak>'},
+"
+2019-09-09 06:50:50.425," 'reprompt': None,
+"
+2019-09-09 06:50:50.425," 'should_end_session': True}
+"
+2019-09-09 06:50:50.445,"END RequestId: eccc36f3-bd12-46a2-88b4-3c722e25c550
+"
+2019-09-09 06:50:50.445,"REPORT RequestId: eccc36f3-bd12-46a2-88b4-3c722e25c550	Duration: 60.21 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 66 MB	
+XRAY TraceId: 1-5d75f64a-b25e46c6f5e55e32845aa9c4	SegmentId: 308db6c34992b385	Sampled: false	
+"
+2019-09-09 06:50:51.446,"
+"
+2019-09-09 06:54:50.370,"START RequestId: 9c150383-c880-4260-a987-eb01d9cf2d7a Version: $LATEST
+"
+2019-09-09 06:54:50.445,"[INFO]	2019-09-09T06:54:50.387Z	9c150383-c880-4260-a987-eb01d9cf2d7a	Request Envelope: {'context': {'audio_player': None,
+"
+2019-09-09 06:54:50.445,"             'automotive': None,
+"
+2019-09-09 06:54:50.445,"             'display': {'token': None},
+"
+2019-09-09 06:54:50.445,"             'geolocation': None,
+"
+2019-09-09 06:54:50.445,"             'system': {'api_access_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjg1OWYzZjIyLTVlMDItNDQxYi04ODkzLTgzYTY1ODdjYjhlOSIsImV4cCI6MTU2ODAxMjM5MCwiaWF0IjoxNTY4MDEyMDkwLCJuYmYiOjE1NjgwMTIwOTAsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCRDB2RkJ1YzBzaEpJdCs2Z3pzaXBqTFFFQUFBQUFBQUJXSUNQeUhKeHl6NkVqMCt2NGRsOFNXNU4zaU9HS3Axb0JNU09lWVRaYXc4RWpwM1FBTzdmZnU3RTJqTXlNb3Jaa0tmWGR4V3pGOFlVbExDL2tDOThSOXVlUFllcWxRY0JqVUM1WVdodkFBVXZZZG42Uk03TmwyWTFiNHJrWkQ2Rlo0eG50MVdlcGZzMGhicWdhUys3bjF6Lzgyd09vZkpCRDlQdnFGRk9md1B3NVlwcW1rb04xS1lQdVVhcm8vL21sQzBmQVh0ZUhsbEhxY20wYjBoUGVHNGFCNEluRHUrUitNV1A4R1o2WnBQRzdHc01QQ2xnM0hJdWg4b1BqUkQ1ejVmNEE1Zjh4VDUyVXdWWmZjVDlPRjdqYU9VbjF3aVNOTW5wZDFaenh1aDcvV2UwOGs5S2NBaGgwRU9FU2dXWW83L0ZkNHNWMWhhbStRbW9TWXo5ZHRuU2FFYkM0aVNMT0pUWktNNXhGR1EwSENTdVQxaWVod3dUd1FvYUZoMk42QUlQMjR5ZmRLVnlGTGZaaiIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFGTzY0QUhFMkVKRFlFRUdNSFhOUjRUNDNGRU1BQjZIVU1UUzNDSU4yNE9IR0pLREU1R0pRTk5JVk9ZNENKVzJHQkpPM1BRTE8ySDZCU1pKQk9HSkdQRTVNUzdRQ1hBT1dZRkpTV1NRNk1ZSlMyQ0Y3WUNGV1hBV0VHS0dXQlM1RlJSVlk3VlM3RE00Rk1JRUNUTEdVRTNPVVlOSlY3RTI3NTNIN1EzM1NPQlVJNVJFTzQ1Q0MiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRVNCNjJBSEtFNUlHUTVMR0xXRTZZVlkyS1NEREVTRFI0UUJIVVVFR01IRFQzREk1QUQzVU9GR1ZRQVZCRVpRT0lBN1VLWUszSVhFWk9MNVNOREM3TDJNMzYzUUtYVERYSUJWNkI1RExVT09TNkZWQ0EyWU9QQ1VEWFM1N0NBRTdYTkZQWjM0U0NJTUtTNEFBSkNZSkFJTTdIM1czVFBUV0RHVjdFRFUyV1lBMlROVVRUS0FMSTNPUldFNU5CUVM3TVgzSlZOTk5NNk5MSFkifX0.O6fM-x0wEcBG4ro_WJbZ_M_qwmrfGvsqDxHBTIHapi6PQTX_R50G1KV0xBYprZoi24bywXFwWS1DihDnLOxUDJu9HBU-m7I85OSnYKv-mHOs7scVdjavZnvDnFa8ldPDZhtqX7pjeiYog3agSXgvlehvrrk_Cyi2PgVIOK6oruaDRbHMNgneZcMkiwaB9a-5Mv-6v4rdP-khrKkLhW2GuYsOiLGBGOH5Z8odbz41lvaYWJb4ssJcVUOc87bCtM_NEDIqvBMuw2oQKy38YEyMvZzgiWm8O-dH7-1ejgNAX-GufAYtLe3qY8cFKX3LTRPLPo80790-zbf3vIU3ugkazQ',
+"
+2019-09-09 06:54:50.445,"                        'api_endpoint': 'https://api.eu.amazonalexa.com',
+"
+2019-09-09 06:54:50.445,"                        'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:54:50.445,"                        'device': {'device_id': 'amzn1.ask.device.AFO64AHE2EJDYEEGMHXNR4T43FEMAB6HUMTS3CIN24OHGJKDE5GJQNNIVOY4CJW2GBJO3PQLO2H6BSZJBOGJGPE5MS7QCXAOWYFJSWSQ6MYJS2CF7YCFWXAWEGKGWBS5FRRVY7VS7DM4FMIECTLGUE3OUYNJV7E2753H7Q33SOBUI5REO45CC',
+"
+2019-09-09 06:54:50.445,"                                   'supported_interfaces': {'alexa_presentation_apl': {'runtime': {'max_version': '1.0'}},
+"
+2019-09-09 06:54:50.445,"                                                            'audio_player': None,
+"
+2019-09-09 06:54:50.445,"                                                            'display': {'markup_version': '1.0',
+"
+2019-09-09 06:54:50.445,"                                                                        'template_version': '1.0'},
+"
+2019-09-09 06:54:50.445,"                                                            'geolocation': None,
+"
+2019-09-09 06:54:50.445,"                                                            'video_app': None}},
+"
+2019-09-09 06:54:50.445,"                        'user': {'access_token': None,
+"
+2019-09-09 06:54:50.445,"                                 'permissions': None,
+"
+2019-09-09 06:54:50.445,"                                 'user_id': 'amzn1.ask.account.AESB62AHKE5IGQ5LGLWE6YVY2KSDDESDR4QBHUUEGMHDT3DI5AD3UOFGVQAVBEZQOIA7UKYK3IXEZOL5SNDC7L2M363QKXTDXIBV6B5DLUOOS6FVCA2YOPCUDXS57CAE7XNFPZ34SCIMKS4AAJCYJAIM7H3W3TPTWDGV7EDU2WYA2TNUTTKALI3ORWE5NBQS7MX3JVNNNM6NLHY'}},
+"
+2019-09-09 06:54:50.445,"             'viewport': {'current_pixel_height': 480.0,
+"
+2019-09-09 06:54:50.445,"                          'current_pixel_width': 960.0,
+"
+2019-09-09 06:54:50.445,"                          'dpi': 160.0,
+"
+2019-09-09 06:54:50.445,"                          'experiences': [{'arc_minute_height': 141.0,
+"
+2019-09-09 06:54:50.445,"                                           'arc_minute_width': 282.0,
+"
+2019-09-09 06:54:50.445,"                                           'can_resize': False,
+"
+2019-09-09 06:54:50.445,"                                           'can_rotate': False}],
+"
+2019-09-09 06:54:50.445,"                          'keyboard': [],
+"
+2019-09-09 06:54:50.445,"                          'pixel_height': 480.0,
+"
+2019-09-09 06:54:50.445,"                          'pixel_width': 960.0,
+"
+2019-09-09 06:54:50.445,"                          'shape': 'RECTANGLE',
+"
+2019-09-09 06:54:50.445,"                          'touch': [{'SINGLE': 'SINGLE'}],
+"
+2019-09-09 06:54:50.445,"                          'video': {'codecs': [{'H_264_41': 'H_264_41'}]}}},
+"
+2019-09-09 06:54:50.445," 'request': {'locale': 'it-IT',
+"
+2019-09-09 06:54:50.445,"             'object_type': 'LaunchRequest',
+"
+2019-09-09 06:54:50.445,"             'request_id': 'amzn1.echo-api.request.a3d4bffd-9422-4ceb-9e27-2de2960d9ba8',
+"
+2019-09-09 06:54:50.445,"             'task': None,
+"
+2019-09-09 06:54:50.445,"             'timestamp': datetime.datetime(2019, 9, 9, 6, 54, 50, tzinfo=tzlocal())},
+"
+2019-09-09 06:54:50.445," 'session': {'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 06:54:50.445,"             'attributes': None,
+"
+2019-09-09 06:54:50.445,"             'new': True,
+"
+2019-09-09 06:54:50.445,"             'session_id': 'amzn1.echo-api.session.b62f948f-2b4a-4961-a1e9-e6c1c8e7071e',
+"
+2019-09-09 06:54:50.445,"             'user': {'access_token': None,
+"
+2019-09-09 06:54:50.445,"                      'permissions': None,
+"
+2019-09-09 06:54:50.445,"                      'user_id': 'amzn1.ask.account.AESB62AHKE5IGQ5LGLWE6YVY2KSDDESDR4QBHUUEGMHDT3DI5AD3UOFGVQAVBEZQOIA7UKYK3IXEZOL5SNDC7L2M363QKXTDXIBV6B5DLUOOS6FVCA2YOPCUDXS57CAE7XNFPZ34SCIMKS4AAJCYJAIM7H3W3TPTWDGV7EDU2WYA2TNUTTKALI3ORWE5NBQS7MX3JVNNNM6NLHY'}},
+"
+2019-09-09 06:54:50.445," 'version': '1.0'}
+"
+2019-09-09 06:54:50.445,"
+[INFO]	2019-09-09T06:54:50.387Z	9c150383-c880-4260-a987-eb01d9cf2d7a	In LaunchRequestHandler
+"
+2019-09-09 06:54:50.445,"
+[INFO]	2019-09-09T06:54:50.387Z	9c150383-c880-4260-a987-eb01d9cf2d7a	Supports APL
+"
+2019-09-09 06:54:50.485,"
+[INFO]	2019-09-09T06:54:50.446Z	9c150383-c880-4260-a987-eb01d9cf2d7a	Response: {'can_fulfill_intent': None,
+"
+2019-09-09 06:54:50.485," 'card': None,
+"
+2019-09-09 06:54:50.485," 'directives': [{'datasources': None,
+"
+2019-09-09 06:54:50.485,"                 'document': {'commands': {},
+"
+2019-09-09 06:54:50.485,"                              'graphics': {},
+"
+2019-09-09 06:54:50.485,"                              'import': [{'name': 'alexa-layouts',
+"
+2019-09-09 06:54:50.485,"                                          'version': '1.0.0'},
+"
+2019-09-09 06:54:50.485,"                                         {'name': 'alexa-viewport-profiles',
+"
+2019-09-09 06:54:50.485,"                                          'version': '1.1.0'}],
+"
+2019-09-09 06:54:50.485,"                              'layouts': {},
+"
+2019-09-09 06:54:50.485,"                              'mainTemplate': {'items': [{'height': '100%',
+"
+2019-09-09 06:54:50.485,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 06:54:50.485,"                                                                     'paddingLeft': '15vw',
+"
+2019-09-09 06:54:50.485,"                                                                     'paddingTop': '5vh',
+"
+2019-09-09 06:54:50.485,"                                                                     'position': 'absolute',
+"
+2019-09-09 06:54:50.485,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 06:54:50.485,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 06:54:50.485,"                                                                     'type': 'Image',
+"
+2019-09-09 06:54:50.485,"                                                                     'width': '90%'}],
+"
+2019-09-09 06:54:50.485,"                                                          'type': 'Container',
+"
+2019-09-09 06:54:50.485,"                                                          'when': '${@viewportProfile '
+"
+2019-09-09 06:54:50.485,"                                                                  '== '
+"
+2019-09-09 06:54:50.485,"                                                                  '@hubRoundSmall}',
+"
+2019-09-09 06:54:50.485,"                                                          'width': '100%'},
+"
+2019-09-09 06:54:50.485,"                                                         {'height': '100%',
+"
+2019-09-09 06:54:50.485,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 06:54:50.485,"                                                                     'position': 'absolute',
+"
+2019-09-09 06:54:50.485,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 06:54:50.485,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 06:54:50.485,"                                                                     'type': 'Image',
+"
+2019-09-09 06:54:50.485,"                                                                     'width': '100%'}],
+"
+2019-09-09 06:54:50.485,"                                                          'type': 'Container',
+"
+2019-09-09 06:54:50.485,"                                                          'width': '100%'}],
+"
+2019-09-09 06:54:50.485,"                                               'parameters': ['payload']},
+"
+2019-09-09 06:54:50.485,"                              'onMount': [],
+"
+2019-09-09 06:54:50.485,"                              'settings': {},
+"
+2019-09-09 06:54:50.485,"                              'theme': 'dark',
+"
+2019-09-09 06:54:50.485,"                              'type': 'APL',
+"
+2019-09-09 06:54:50.485,"                              'version': '1.1'},
+"
+2019-09-09 06:54:50.485,"                 'object_type': 'Alexa.Presentation.APL.RenderDocument',
+"
+2019-09-09 06:54:50.485,"                 'packages': None,
+"
+2019-09-09 06:54:50.485,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 06:54:50.485,"                {'commands': [{'delay': 5000,
+"
+2019-09-09 06:54:50.485,"                               'description': 'wait_5_sec',
+"
+2019-09-09 06:54:50.485,"                               'object_type': 'Idle',
+"
+2019-09-09 06:54:50.485,"                               'when': None}],
+"
+2019-09-09 06:54:50.485,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 06:54:50.485,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 06:54:50.485,"                {'commands': [{'delay': 5,
+"
+2019-09-09 06:54:50.485,"                               'description': 'last command',
+"
+2019-09-09 06:54:50.485,"                               'object_type': 'Idle',
+"
+2019-09-09 06:54:50.485,"                               'when': None}],
+"
+2019-09-09 06:54:50.485,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 06:54:50.485,"                 'token': 'RadarMeteoER_Token'}],
+"
+2019-09-09 06:54:50.485," 'output_speech': {'object_type': 'SSML',
+"
+2019-09-09 06:54:50.485,"                   'play_behavior': None,
+"
+2019-09-09 06:54:50.485,"                   'ssml': '<speak>Previsione a tre ore</speak>'},
+"
+2019-09-09 06:54:50.485," 'reprompt': None,
+"
+2019-09-09 06:54:50.485," 'should_end_session': True}
+"
+2019-09-09 06:54:50.505,"END RequestId: 9c150383-c880-4260-a987-eb01d9cf2d7a
+"
+2019-09-09 06:54:50.505,"REPORT RequestId: 9c150383-c880-4260-a987-eb01d9cf2d7a	Duration: 113.97 ms	Billed Duration: 200 ms	Memory Size: 128 MB	Max Memory Used: 66 MB	
+XRAY TraceId: 1-5d75f73a-e218d43b6b5308b91f202a66	SegmentId: 54dd5b13708a18a9	Sampled: false	
+"
+2019-09-09 06:54:51.506,"
+"
+2019-09-09 07:01:24.042,"START RequestId: d3282ada-09c4-48e4-92b2-f5bca66797ed Version: $LATEST
+"
+2019-09-09 07:01:24.105,"[INFO]	2019-09-09T07:01:24.46Z	d3282ada-09c4-48e4-92b2-f5bca66797ed	Request Envelope: {'context': {'audio_player': None,
+"
+2019-09-09 07:01:24.105,"             'automotive': None,
+"
+2019-09-09 07:01:24.105,"             'display': {'token': None},
+"
+2019-09-09 07:01:24.105,"             'geolocation': None,
+"
+2019-09-09 07:01:24.105,"             'system': {'api_access_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjg1OWYzZjIyLTVlMDItNDQxYi04ODkzLTgzYTY1ODdjYjhlOSIsImV4cCI6MTU2ODAxMjc4MywiaWF0IjoxNTY4MDEyNDgzLCJuYmYiOjE1NjgwMTI0ODMsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCRDB2RkJ1YzBzaEpJdCs2Z3pzaXBqTFFFQUFBQUFBQUF4SEdnZHZvZzNsR2NVOGVWN3dDSFpmYThGMEJ2QTg4UC80Mk5IclpBOFpXekNjVzBXWEFuWFB6K05QamV2U0FPQ3ZnK2lUZzExRTdCc0JvLzNqa3BzbnMrQ1NzSVp3dkc4Y2ZNdnJxcnJHUEs4bTh5OWV1clF3Y250ZUY3YVozWXhlMytQcDNxbEc0b042ZmRzVm1FUWVhMUpPSzI3MkJHUDgzY2xWKytBS1l0MWtuaHZPTnVaNkdIS0lDVHhZYWZTZ1IxTHN4RllDTC9iejF3QzJmNU5kT3JaajgvMUJua3NQY2wvQkJJS25kdkVDdEdTWkloWUtlU1YrSGdJUDZxV1REMFkvNWtCSVpwVWtpVTJybFdKZVFNT2dhLzBUcUZnN1BxMlFNdi84TklaTy80U0hETXAvSnpmYUptdVpXamdackhHTDZGaXNwQWVKL0VOMEUzVXNQcXNnZkFBQmlkSmhEN1ZWMGNLTHFoaGJKaWtNaEF1WFJFNXpFMzBlTGR3c0lEbVdBSngwL3k3NXZLWiIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFITktMWkZFVDRSR0UzTU1VNlhQSk5RU0wyV1E3VENaQUlUTTNWWlZIRjNCVUpHREVPNEdWMlZLR0dCTEVBTk9FQlA3N0NIM1dIUUYyRVNON0Q3QzYyUjJEUURBMlE3QlJaRzQySDVNN0lOVlJFUUhFSVdXT1lRUkk1V0hLRTJDS0NSTTJOVEJUUDZSM1lLNTZYVUxXWlpSSUhHUUJORzRVN1VZSDNUUjVKTjVYWlZJWEpYSlUiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRklJQk5VSEUyWjVHRUFQVlo2Qkg0TTdNS0xGUlVRUlRVV1ZBTlNKQVQ0VUxDNldLUlFCTjJURVNSQ1BIUzNaS0FVSUNZT0pFWVlBWUtFNzNSUDVVR0VQR0xPRTZJRjNUWE5OVUk2VFdOS0dUR0VCN08yS1FBVjY0QzM0WTNGWlFBNjdENEFTRzJHM0tYSFNGQkNYQkJRRjZaV0tRR1hCWkdJQlVWR0ZSVE5VUEtSWU02RTJJWEQ0UFFLTENaRzUzTFhDVjZIM1NBSlpTSEkifX0.jgVkgQZBKBiriB5HYufGtiQ00x2ZY525tGdV8sWm_649EDyEHydOkEIHNdo2eVALbyGO7kDna9h6tQgX9UhMK8Z2zd7E1090A0Jp5Kgnlyf5jRT_UglS-K2t1D8kFn3lSXKv9m89-wbzLGNMxkaVYWo1ebJD43vN-PaLS-eJSeoxfdvEMcUPN2mL6FCgJcomqJTEFjeS1u7m8TuEZC1ja8A98Z0AjWYDGYtv7zfhayxfBVyEMrWuejYyfpu4zbmd7RniYQo0YwSBQgus3ypl_cefBiWN2IJAiE8vyBvuHPEqJuGHaa64hC7IVvWRSUpsFcjMk2QR2OBYIeBpJL0Ujg',
+"
+2019-09-09 07:01:24.105,"                        'api_endpoint': 'https://api.eu.amazonalexa.com',
+"
+2019-09-09 07:01:24.105,"                        'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 07:01:24.105,"                        'device': {'device_id': 'amzn1.ask.device.AHNKLZFET4RGE3MMU6XPJNQSL2WQ7TCZAITM3VZVHF3BUJGDEO4GV2VKGGBLEANOEBP77CH3WHQF2ESN7D7C62R2DQDA2Q7BRZG42H5M7INVREQHEIWWOYQRI5WHKE2CKCRM2NTBTP6R3YK56XULWZZRIHGQBNG4U7UYH3TR5JN5XZVIXJXJU',
+"
+2019-09-09 07:01:24.105,"                                   'supported_interfaces': {'alexa_presentation_apl': {'runtime': {'max_version': '1.0'}},
+"
+2019-09-09 07:01:24.105,"                                                            'audio_player': None,
+"
+2019-09-09 07:01:24.105,"                                                            'display': {'markup_version': '1.0',
+"
+2019-09-09 07:01:24.105,"                                                                        'template_version': '1.0'},
+"
+2019-09-09 07:01:24.105,"                                                            'geolocation': None,
+"
+2019-09-09 07:01:24.105,"                                                            'video_app': None}},
+"
+2019-09-09 07:01:24.105,"                        'user': {'access_token': None,
+"
+2019-09-09 07:01:24.105,"                                 'permissions': None,
+"
+2019-09-09 07:01:24.105,"                                 'user_id': 'amzn1.ask.account.AFIIBNUHE2Z5GEAPVZ6BH4M7MKLFRUQRTUWVANSJAT4ULC6WKRQBN2TESRCPHS3ZKAUICYOJEYYAYKE73RP5UGEPGLOE6IF3TXNNUI6TWNKGTGEB7O2KQAV64C34Y3FZQA67D4ASG2G3KXHSFBCXBBQF6ZWKQGXBZGIBUVGFRTNUPKRYM6E2IXD4PQKLCZG53LXCV6H3SAJZSHI'}},
+"
+2019-09-09 07:01:24.105,"             'viewport': {'current_pixel_height': 480.0,
+"
+2019-09-09 07:01:24.105,"                          'current_pixel_width': 960.0,
+"
+2019-09-09 07:01:24.105,"                          'dpi': 160.0,
+"
+2019-09-09 07:01:24.105,"                          'experiences': [{'arc_minute_height': 141.0,
+"
+2019-09-09 07:01:24.105,"                                           'arc_minute_width': 282.0,
+"
+2019-09-09 07:01:24.105,"                                           'can_resize': False,
+"
+2019-09-09 07:01:24.105,"                                           'can_rotate': False}],
+"
+2019-09-09 07:01:24.105,"                          'keyboard': [],
+"
+2019-09-09 07:01:24.105,"                          'pixel_height': 480.0,
+"
+2019-09-09 07:01:24.105,"                          'pixel_width': 960.0,
+"
+2019-09-09 07:01:24.105,"                          'shape': 'RECTANGLE',
+"
+2019-09-09 07:01:24.105,"                          'touch': [{'SINGLE': 'SINGLE'}],
+"
+2019-09-09 07:01:24.105,"                          'video': {'codecs': [{'H_264_41': 'H_264_41'}]}}},
+"
+2019-09-09 07:01:24.105," 'request': {'locale': 'it-IT',
+"
+2019-09-09 07:01:24.105,"             'object_type': 'LaunchRequest',
+"
+2019-09-09 07:01:24.105,"             'request_id': 'amzn1.echo-api.request.1cbe82d0-410d-45e0-b8c2-843b559b9e73',
+"
+2019-09-09 07:01:24.105,"             'task': None,
+"
+2019-09-09 07:01:24.105,"             'timestamp': datetime.datetime(2019, 9, 9, 7, 1, 24, tzinfo=tzlocal())},
+"
+2019-09-09 07:01:24.105," 'session': {'application': {'application_id': 'amzn1.ask.skill.859f3f22-5e02-441b-8893-83a6587cb8e9'},
+"
+2019-09-09 07:01:24.105,"             'attributes': None,
+"
+2019-09-09 07:01:24.105,"             'new': True,
+"
+2019-09-09 07:01:24.105,"             'session_id': 'amzn1.echo-api.session.29616d6d-a1db-4644-aa71-786ccb06db68',
+"
+2019-09-09 07:01:24.105,"             'user': {'access_token': None,
+"
+2019-09-09 07:01:24.105,"                      'permissions': None,
+"
+2019-09-09 07:01:24.105,"                      'user_id': 'amzn1.ask.account.AFIIBNUHE2Z5GEAPVZ6BH4M7MKLFRUQRTUWVANSJAT4ULC6WKRQBN2TESRCPHS3ZKAUICYOJEYYAYKE73RP5UGEPGLOE6IF3TXNNUI6TWNKGTGEB7O2KQAV64C34Y3FZQA67D4ASG2G3KXHSFBCXBBQF6ZWKQGXBZGIBUVGFRTNUPKRYM6E2IXD4PQKLCZG53LXCV6H3SAJZSHI'}},
+"
+2019-09-09 07:01:24.105," 'version': '1.0'}
+"
+2019-09-09 07:01:24.105,"
+[INFO]	2019-09-09T07:01:24.47Z	d3282ada-09c4-48e4-92b2-f5bca66797ed	In LaunchRequestHandler
+"
+2019-09-09 07:01:24.105,"
+[INFO]	2019-09-09T07:01:24.47Z	d3282ada-09c4-48e4-92b2-f5bca66797ed	Supports APL
+"
+2019-09-09 07:01:24.125,"
+[INFO]	2019-09-09T07:01:24.105Z	d3282ada-09c4-48e4-92b2-f5bca66797ed	Response: {'can_fulfill_intent': None,
+"
+2019-09-09 07:01:24.125," 'card': None,
+"
+2019-09-09 07:01:24.125," 'directives': [{'datasources': None,
+"
+2019-09-09 07:01:24.125,"                 'document': {'commands': {},
+"
+2019-09-09 07:01:24.125,"                              'graphics': {},
+"
+2019-09-09 07:01:24.125,"                              'import': [{'name': 'alexa-layouts',
+"
+2019-09-09 07:01:24.125,"                                          'version': '1.0.0'},
+"
+2019-09-09 07:01:24.125,"                                         {'name': 'alexa-viewport-profiles',
+"
+2019-09-09 07:01:24.125,"                                          'version': '1.1.0'}],
+"
+2019-09-09 07:01:24.125,"                              'layouts': {},
+"
+2019-09-09 07:01:24.125,"                              'mainTemplate': {'items': [{'height': '100%',
+"
+2019-09-09 07:01:24.125,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 07:01:24.125,"                                                                     'paddingLeft': '15vw',
+"
+2019-09-09 07:01:24.125,"                                                                     'paddingTop': '5vh',
+"
+2019-09-09 07:01:24.125,"                                                                     'position': 'absolute',
+"
+2019-09-09 07:01:24.125,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 07:01:24.125,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 07:01:24.125,"                                                                     'type': 'Image',
+"
+2019-09-09 07:01:24.125,"                                                                     'width': '90%'}],
+"
+2019-09-09 07:01:24.125,"                                                          'type': 'Container',
+"
+2019-09-09 07:01:24.125,"                                                          'when': '${@viewportProfile '
+"
+2019-09-09 07:01:24.125,"                                                                  '== '
+"
+2019-09-09 07:01:24.125,"                                                                  '@hubRoundSmall}',
+"
+2019-09-09 07:01:24.125,"                                                          'width': '100%'},
+"
+2019-09-09 07:01:24.125,"                                                         {'height': '100%',
+"
+2019-09-09 07:01:24.125,"                                                          'items': [{'height': '100%',
+"
+2019-09-09 07:01:24.125,"                                                                     'position': 'absolute',
+"
+2019-09-09 07:01:24.125,"                                                                     'scale': 'best-fit',
+"
+2019-09-09 07:01:24.125,"                                                                     'source': 'https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png?t=${1==1}',
+"
+2019-09-09 07:01:24.125,"                                                                     'type': 'Image',
+"
+2019-09-09 07:01:24.125,"                                                                     'width': '100%'}],
+"
+2019-09-09 07:01:24.125,"                                                          'type': 'Container',
+"
+2019-09-09 07:01:24.125,"                                                          'width': '100%'}],
+"
+2019-09-09 07:01:24.125,"                                               'parameters': ['payload']},
+"
+2019-09-09 07:01:24.125,"                              'onMount': [],
+"
+2019-09-09 07:01:24.125,"                              'settings': {},
+"
+2019-09-09 07:01:24.125,"                              'theme': 'dark',
+"
+2019-09-09 07:01:24.125,"                              'type': 'APL',
+"
+2019-09-09 07:01:24.125,"                              'version': '1.1'},
+"
+2019-09-09 07:01:24.125,"                 'object_type': 'Alexa.Presentation.APL.RenderDocument',
+"
+2019-09-09 07:01:24.125,"                 'packages': None,
+"
+2019-09-09 07:01:24.125,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 07:01:24.125,"                {'commands': [{'delay': 5000,
+"
+2019-09-09 07:01:24.125,"                               'description': 'wait_5_sec',
+"
+2019-09-09 07:01:24.125,"                               'object_type': 'Idle',
+"
+2019-09-09 07:01:24.125,"                               'when': None}],
+"
+2019-09-09 07:01:24.125,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 07:01:24.125,"                 'token': 'RadarMeteoER_Token'},
+"
+2019-09-09 07:01:24.125,"                {'commands': [{'delay': 5,
+"
+2019-09-09 07:01:24.125,"                               'description': 'last command',
+"
+2019-09-09 07:01:24.125,"                               'object_type': 'Idle',
+"
+2019-09-09 07:01:24.125,"                               'when': None}],
+"
+2019-09-09 07:01:24.125,"                 'object_type': 'Alexa.Presentation.APL.ExecuteCommands',
+"
+2019-09-09 07:01:24.125,"                 'token': 'RadarMeteoER_Token'}],
+"
+2019-09-09 07:01:24.125," 'output_speech': {'object_type': 'SSML',
+"
+2019-09-09 07:01:24.125,"                   'play_behavior': None,
+"
+2019-09-09 07:01:24.125,"                   'ssml': '<speak>Previsione a tre ore</speak>'},
+"
+2019-09-09 07:01:24.125," 'reprompt': None,
+"
+2019-09-09 07:01:24.125," 'should_end_session': True}
+"
+2019-09-09 07:01:24.145,"END RequestId: d3282ada-09c4-48e4-92b2-f5bca66797ed
+"
+2019-09-09 07:01:24.145,"REPORT RequestId: d3282ada-09c4-48e4-92b2-f5bca66797ed	Duration: 101.78 ms	Billed Duration: 200 ms	Memory Size: 128 MB	Max Memory Used: 66 MB	
+XRAY TraceId: 1-5d75f8c4-cb9f63e03d61bd2898c7cf40	SegmentId: 73fe87956dc09228	Sampled: false	
+"
+2019-09-09 07:01:25.146,"
+"
