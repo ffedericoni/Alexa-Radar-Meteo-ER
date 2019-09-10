@@ -36,7 +36,7 @@ EXIT_SKILL_MESSAGE = ("OK")
 USE_CARDS_FLAG = False
 IMG_PATH = ( "https://www.arpae.it/sim/datiiningresso/Immagini/Radar/nowcast.png" ) #img size = 663x556
 TITLE = "Previsione a tre ore Radar Meteo ER"
-PRIMARY_TEXT = "Previsione a tre ore"
+PRIMARY_TEXT = "Previsione per le prossime tre ore"
 FALLBACK_ANSWER = ( "Sorry. I can't help you with that." )
 APP_NAME = "RadarMeteoER"
 
@@ -264,11 +264,15 @@ class NowcastingIntent_handler(AbstractRequestHandler):
 
         if supports_APL(handler_input):
             logger.info("Supports APL")
-            doc = _load_apl_document("RadarMeteoAPL.json")
             response_builder.add_directive(
                 RenderDocumentDirective(
                     token=APP_NAME + "_Token",
-                    document=_load_apl_document("RadarMeteoAPL.json")
+                    document=_load_apl_document("RadarMeteoAPL.json"),
+                    datasources= {
+                        "param" : {
+                            'url': IMG_PATH
+                        }
+                    }
                 )
             ).add_directive(
                 ExecuteCommandsDirective(

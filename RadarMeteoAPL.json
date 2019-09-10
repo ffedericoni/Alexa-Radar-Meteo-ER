@@ -2,7 +2,7 @@
         "type": "APL",
         "version": "1.1",
         "settings": {
-           "idleTimeout": 6000
+           "idleTimeout": 8000
         },        
 	"theme": "dark",
         "import": [
